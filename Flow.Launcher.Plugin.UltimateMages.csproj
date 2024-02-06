@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <AssemblyName>Flow.Launcher.Plugin.UltimateMages</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.UltimateMages</PackageId>
+    <Authors>NoPlagiarism</Authors>
+    <PackageProjectUrl>https://github.com/NoPlagiarism/Flow.Launcher.Plugin.UltimateMages</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NoPlagiarism/Flow.Launcher.Plugin.UltimateMages</RepositoryUrl>
+    <PackageTags>flow-launcher flow-plugin</PackageTags>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+	  <Content Include="icon.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flow.Launcher.Plugin" Version="4.1.1" />
+    <PackageReference Include="Mages" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mages.Plugins.LinearAlgebra">
+      <HintPath>C:\Users\Hiro\AppData\Local\Mages\app-2.0.2\Mages.Plugins.LinearAlgebra.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+{
+    "ID": "109AE294591F42DF8A188AA72B176A5B",
+    "ActionKeyword": "mg",
+    "Name": "UltimateMages",
+    "Description": "Flow Launcher plugin to acquire full power of Mages",
+    "Author": "NoPlagiarism",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/NoPlagiarism/Flow.Launcher.Plugin.UltimateMages",
+    "IcoPath": "icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.UltimateMages.dll"
+}
